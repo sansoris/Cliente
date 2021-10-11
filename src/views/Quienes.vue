@@ -22,7 +22,7 @@
                             <input class="Vegetable_fom" placeholder="Vegetable" type="text" name=" Vegetable">
                             <button class="Search_btn">Search</button>
                         </form> -->
-                        <a href="./Contactenos.vue ">Contáctenos</a> <a href="./Vinculate.vue">Recomendar </a>
+                        <a href="/src/views/Contactenos.vue">Contáctenos</a> <a href="/src/views/Vinculate.vue">Recomendar </a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -49,7 +49,7 @@
                     <input class="Vegetable_fom" placeholder="Vegetable" type="text" name=" Vegetable">
                     <button class="Search_btn">Search</button>
                 </form> -->
-                <a href="./Contactenos.vue ">Contáctenos</a> <a href="./Vinculate">Recomendar</a>
+                        <a href="/src/views/Contactenos.vue">Contáctenos</a> <a href="/src/views/Vinculate.vue">Recomendar </a>
                 </div>
                     </div>
 
@@ -84,7 +84,7 @@
                     <input class="Vegetable_fom" placeholder="Vegetable" type="text" name=" Vegetable">
                     <button class="Search_btn">Search</button>
                 </form> -->
-                <a href="./Contactenos.vue ">Contáctenos</a> <a href="./Vinculate">Recomendar </a>
+                        <a href="/src/views/Contactenos.vue">Contáctenos</a> <a href="/src/views/Vinculate.vue">Recomendar </a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -115,7 +115,7 @@
 <script>
 
 import Basiclayouts from '@/layouts/Basiclayouts.vue';
-import Home from './Home.vue'
+// import Home from './Home.vue'
 import Vinculate from './Vinculate.vue'
 import Contactenos from './Contactenos.vue'
 
@@ -123,7 +123,7 @@ export default {
   name: 'Terminos',
   components: {
     Basiclayouts,
-    Home, 
+    // Home, 
     Vinculate,
     Contactenos,
 

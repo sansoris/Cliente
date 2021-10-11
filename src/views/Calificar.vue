@@ -89,13 +89,13 @@
 <script>
 
 import Basiclayouts from '@/layouts/Basiclayouts.vue';
-import Home from './Home'
+// import Home from './Home'
 
 export default {
   name: 'Calificar',
   components: {
     Basiclayouts,
-    Home, 
+    // Home, 
 
     
   },

@@ -51,10 +51,10 @@
             <a class="nav-link" href="../views/Login.vue"><FONT COLOR="black">Inicio sesión</FONT></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="contactenos.html"><FONT COLOR="black">Contáctenos</FONT></a>
+            <a class="nav-link" href="../views/Contactenos.vue"><FONT COLOR="black">Contáctenos</FONT></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="terminos.html"><FONT COLOR="black">Términos y Condiciones</FONT></a>
+            <a class="nav-link" href="../views/Terminos.vue"><FONT COLOR="black">Términos y Condiciones</FONT></a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0" >

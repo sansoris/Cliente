@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import Login from '../views/Login.vue'
-import Register from '../views/Register.vue'
-import Vinculate from '../views/Vinculate.vue'
-import Servicios from '../views/Servicios.vue'
-import Calificar from '../views/Calificar.vue'
-import Quienes from '../views/Quienes.vue'
-import Contactenos from '../views/Contactenos.vue'
-import Terminos from '../views/Terminos.vue'
+import Home from '@/views/Home.vue'
+import Login from '@/views/Login.vue'
+import Register from '@/views/Register.vue'
+import Vinculate from '@/views/Vinculate.vue'
+import Servicios from '@/views/Servicios.vue'
+import Calificar from '@/views/Calificar.vue'
+import Quienes from '@/views/Quienes.vue'
+import Contactenos from '@/views/Contactenos.vue'
+import Terminos from '@/views/Terminos.vue'
 
 const routes = [
   {
@@ -41,7 +41,7 @@ const routes = [
     component: Calificar
   },
     {
-    path: '/views/Quienes.vue',
+    path: 'quienes',
     name: 'Quienes',
     component: Quienes
     },
@@ -54,6 +54,11 @@ const routes = [
     path: '/terminos',
     name: 'Terminos',
     component: Terminos
+  },
+  {
+    path: '/condicionesUso',
+    name: 'CondicionesUso',
+    component: CondicionesUso
   }
 
 

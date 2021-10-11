@@ -34,17 +34,19 @@
 <script>
 
 import Basiclayouts from '@/layouts/Basiclayouts.vue';
-import Home from './Home.vue'
+// import Home from './Home.vue'
 import Vinculate from './Vinculate.vue'
-import Contactanos from './Contactanos.vue'
+import Contactenos from './Contactenos.vue'
+
 
 export default {
   name: 'Terminos',
   components: {
     Basiclayouts,
-    Home, 
+    // Home, 
     Vinculate,
-    Contactanos,
+    Contactenos,
+  
 
     
   },
@@ -422,7 +424,7 @@ padding: 40px 0;
 .about .about-box::after {
      position: absolute;
      content: "";
-     background: url(../images/crros.png);
+    //  background: url(../images/crros.png);
      height: 244px;
 width: 187px;
 bottom: 0;
