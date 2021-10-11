@@ -8,11 +8,16 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "semantic-ui-css": "^2.4.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
-    "vuex": "^4.0.0-0"
+    "vue-yup-form-validation": "^0.0.19",
+    "vuex": "^4.0.0-0",
+    "yup": "0.31.0"
   },
   "devDependencies": {
+    "@types/yup": "^0.29.13",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",

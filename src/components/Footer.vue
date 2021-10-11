@@ -1,131 +1,35 @@
 <template>
-  <Basiclayouts>
-   
-<!-- Código banner - carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
+<!-- header inner -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/img/1.png" class="d-block w-100" alt="Banner 1">
-                <div class="carousel-caption d-none d-md-block">
-                <h1>Se lo Recomiendo</h1> 
-                <p>Ofrece la solución que su hogar necesita</p>
-                </div>
-            </div>
+<!-- bootstrap css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<!-- style css -->
+    <link rel="stylesheet" href="/css/style.css">
+<!-- Responsive-->
+     <link rel="stylesheet" href="/css/responsive.css">  
+<!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 
-            <div class="carousel-item">
-                <img src="/img/2.png" class="d-block w-100" alt="Banner 2">
-                <div class="carousel-caption d-none d-md-block">
-                <p><a class="btn btn-lg btn-primary" href="#">Abrir</a></p>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="/img/3.png" class="d-block w-100" alt="Banner 3">
-            </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-    <!-- inicio how its works -->
-    <!-- Principal card container -->
-        <h1 style="text-align: center;">¿Cómo Funciona?</h1>
-        <div class="container_card">
-    <!-- Card # 1 -->
-            <div class="card_father">
-                <div class="card">
-        <!-- Card front -->
-                    <div class="card_front" style="background-image: url(img/Card_1.png);">
-                        <div class="bg"></div>
-                        <div class="body_front">
-                            <h1>Vincúlate</h1>
-                        </div>
-                    </div>
-        <!-- Card back -->
-                    <div class="card_back">
-                        <div class="body_back">
-                            <h3>Vincúlate</h3>
-                            <p>Vincúlate a nuestro equipo registrando toda tu información en el formulario de registro</p>
-                            <a href="./Vinculate.vue"><input type="button" value="Leer Más"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    <!-- Card # 2 -->
-            <div class="card_father">
-                <div class="card">
-        <!-- Card front -->
-                    <div class="card_front" style="background-image: url(./img/Card_2.png);">
-                        <div class="bg"></div>
-                        <div class="body_front">
-                            <h1>Busca el profesional que necesitas</h1>
-                        </div>
-                    </div>
-        <!-- Card back -->
-                    <div class="card_back">
-                        <div class="body_back">
-                            <h4>Busca el profesional que necesitas</h4>
-                            <p>Busca el profesional perfecto para resolver el incoveniente que presentas</p>
-                            <a href="./Servicios.vue"><input type="button" value="Leer Más"></a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-    <!-- Card # 3 -->
-            <div class="card_father">
-                <div class="card">
-        <!-- Card front -->
-                    <div class="card_front" style="background-image: url(img/Card_3.png);">
-                        <div class="bg"></div>
-                        <div class="body_front">
-                            <h1>Aporta tu calificacion</h1>
-                        </div>
-                    </div>
-        <!-- Card back -->
-                    <div class="card_back">
-                        <div class="body_back">
-                            <h3>Aporta tu calificacion</h3>
-                            <p>Tu opinión es muy valiosa mejorando el portafolio profesional y para referencia de la comunidad.</p>
-                            <a href="./Calificar.vue"><input type="button" value="Leer Más"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!-- fin how its works -->
+<!-- Footer beging -->
+    <div class="social-media">
+        <h2 class="seccion-pie">Se Lo Recomiendo © 2021</h2>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/" target="blank"><img src="/img/facebook.png" width="40" height="40" alt="Facebook"></a></li>
+            <li><a href="https://www.twitter.com/" target="blank"><img src="/img/twitter.png" width="40" height="40" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/" target="blank"><img src="/img/instagram.png" width="40" height="40" alt="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/" target="blank"><img src="/img/linkedin.png" width="40" height="40" alt="Linkedin"></a></li>
+        </ul>
+    </div>
+<!-- Footer ending -->
+<!-- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> -->
 
 
-  </Basiclayouts>
-  <Login />
 </template>
-
-<script>
-
-import Basiclayouts from '@/layouts/Basiclayouts';
-import Login from './Login.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    Basiclayouts,
-    Login,
-  },
-};
-</script>
 
 
 
@@ -299,27 +203,27 @@ export default {
      margin: 90px 30px 20px 30px;     
 }
 
-.testimonial_cont p {
-color: #fff;
-padding-left:50px;
-font-size: 19px;
-line-height: 30px;
-font-weight: 400;
+// .testimonial_cont p {
+// color: #fff;
+// padding-left:50px;
+// font-size: 19px;
+// line-height: 30px;
+// font-weight: 400;
 
-}
-#testimonial_slider .carousel-indicators {
-     bottom: -50px;
-}
+// }
+// #testimonial_slider .carousel-indicators {
+//      bottom: -50px;
+// }
 
-#testimonial_slider .carousel-indicators li {
-     width: 25px;
-height: 25px;
-background-color: #052501;
-border-radius: 50px;
-}
-#testimonial_slider .carousel-indicators li.active {
-     background-color: #4bc714;
-}
+// #testimonial_slider .carousel-indicators li {
+//      width: 25px;
+// height: 25px;
+// background-color: #052501;
+// border-radius: 50px;
+// }
+// #testimonial_slider .carousel-indicators li.active {
+//      background-color: #4bc714;
+// }
 .form-inline{display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap;-ms-flex-align:center;align-items:center}.form-inline .form-check{width:100%}@media (min-width:576px){.form-inline label{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;margin-bottom:0}.form-inline .form-group{display:-ms-flexbox;display:flex;-ms-flex:0 0 auto;flex:0 0 auto;-ms-flex-flow:row wrap;flex-flow:row wrap;-ms-flex-align:center;align-items:center;margin-bottom:0}.form-inline .form-control{display:inline-block;width:auto;vertical-align:middle}
 .form-inline .form-control-plaintext{display:inline-block}.form-inline .custom-select,.form-inline .input-group{width:auto}.form-inline .form-check{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:auto;padding-left:0}.form-inline .form-check-input{position:relative;margin-top:0;margin-right:.25rem;margin-left:0}.form-inline .custom-control{-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}.form-inline .custom-control-label{margin-bottom:0}}
 

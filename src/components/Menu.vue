@@ -1,131 +1,118 @@
 <template>
-  <Basiclayouts>
+<!-- Barra de navegación página -->
+<!-- header inner -->
    
-<!-- Código banner - carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/img/1.png" class="d-block w-100" alt="Banner 1">
-                <div class="carousel-caption d-none d-md-block">
-                <h1>Se lo Recomiendo</h1> 
-                <p>Ofrece la solución que su hogar necesita</p>
+<!-- bootstrap css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<!-- style css -->
+    <link rel="stylesheet" href="/css/style.css">
+<!-- Responsive-->
+     <link rel="stylesheet" href="/css/responsive.css">  
+<!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+<div class="ui secondary menu">
+      <div class="ui container">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between" style ="background-color: #FFA07A;">
+    <a class="navbar-brand" href="#"> </a>
+     <img src="assets/Logo corporativo.png " width="90" height="100" alt="">
+    <button class="navbar-toggler" style ="background-color: #FFA07A;" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" style ="background-color: #FFA07A;" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+       
+
+        <!-- <router-link class="nav-item active" to="/">
+            <img class="ui small image" src="/src/assets/Logo corporativo.png " alt="">
+            <li class="nav-item">
+                <a class="nav-link" href="/src/views/Login.vue"><FONT COLOR="black">Inicio sesión</FONT></a>
+            </li>
+        </router-link>   -->
+        <li class="nav-item active">
+          <a class="nav-link" href="../views/Home.vue"><FONT COLOR="black">Inicio <span class="sr-only">(Actual)</span></FONT></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/Quienes.vue" ><FONT COLOR="black">Quienes Somos</FONT></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../views/Servicios.vue"><FONT COLOR="black">Servicios Disponibles</FONT></a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../views/Login.vue"><FONT COLOR="black">Inicio sesión</FONT></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contactenos.html"><FONT COLOR="black">Contáctenos</FONT></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="terminos.html"><FONT COLOR="black">Términos y Condiciones</FONT></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" >
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" 
+        style ="background-color: #8b0000; border-color: #8b0000;" 
+        type="submit"> 
+        <FONT COLOR="white">Buscar</FONT></button>
+      </form>
+    </div>
+  </nav>
+  </div>
+</div>
+
+<!-- FIN Barra de navegación página -->
+
+<div class="container">
+        <div class="row"></div>
+            <div class="col-xxl-10 col-xl-9 col-lg-8 col-md-7 col-sm-6 col-5">
                 </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="/img/2.png" class="d-block w-100" alt="Banner 2">
-                <div class="carousel-caption d-none d-md-block">
-                <p><a class="btn btn-lg btn-primary" href="#">Abrir</a></p>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img src="/img/3.png" class="d-block w-100" alt="Banner 3">
-            </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-    <!-- inicio how its works -->
-    <!-- Principal card container -->
-        <h1 style="text-align: center;">¿Cómo Funciona?</h1>
-        <div class="container_card">
-    <!-- Card # 1 -->
-            <div class="card_father">
-                <div class="card">
-        <!-- Card front -->
-                    <div class="card_front" style="background-image: url(img/Card_1.png);">
-                        <div class="bg"></div>
-                        <div class="body_front">
-                            <h1>Vincúlate</h1>
-                        </div>
-                    </div>
-        <!-- Card back -->
-                    <div class="card_back">
-                        <div class="body_back">
-                            <h3>Vincúlate</h3>
-                            <p>Vincúlate a nuestro equipo registrando toda tu información en el formulario de registro</p>
-                            <a href="./Vinculate.vue"><input type="button" value="Leer Más"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    <!-- Card # 2 -->
-            <div class="card_father">
-                <div class="card">
-        <!-- Card front -->
-                    <div class="card_front" style="background-image: url(./img/Card_2.png);">
-                        <div class="bg"></div>
-                        <div class="body_front">
-                            <h1>Busca el profesional que necesitas</h1>
-                        </div>
-                    </div>
-        <!-- Card back -->
-                    <div class="card_back">
-                        <div class="body_back">
-                            <h4>Busca el profesional que necesitas</h4>
-                            <p>Busca el profesional perfecto para resolver el incoveniente que presentas</p>
-                            <a href="./Servicios.vue"><input type="button" value="Leer Más"></a>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-    <!-- Card # 3 -->
-            <div class="card_father">
-                <div class="card">
-        <!-- Card front -->
-                    <div class="card_front" style="background-image: url(img/Card_3.png);">
-                        <div class="bg"></div>
-                        <div class="body_front">
-                            <h1>Aporta tu calificacion</h1>
-                        </div>
-                    </div>
-        <!-- Card back -->
-                    <div class="card_back">
-                        <div class="body_back">
-                            <h3>Aporta tu calificacion</h3>
-                            <p>Tu opinión es muy valiosa mejorando el portafolio profesional y para referencia de la comunidad.</p>
-                            <a href="./Calificar.vue"><input type="button" value="Leer Más"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!-- fin how its works -->
+</div>
 
 
-  </Basiclayouts>
-  <Login />
 </template>
 
 <script>
 
-import Basiclayouts from '@/layouts/Basiclayouts';
-import Login from './Login.vue'
+import { ref, onMounted } from 'vue';
+import {getTokenApi, deleteTokenApi } from '@/api/token';
+import {getCategoriesApi } from '@/api/category';
 
 export default {
-  name: 'Home',
-  components: {
-    Basiclayouts,
-    Login,
-  },
+    name: 'Menu',
+
+    setup() {
+        let categories = ref(null);
+        onMounted( async () => {
+        const response = await getCategoriesApi();
+        categories.value = response;
+        });
+    
+    const token = getTokenApi();
+
+    const logout =() => {
+        deleteTokenApi();
+        location.replace('/');
+    };
+    return{
+        token,
+        logout,
+        categories,
+    };
+},
 };
+
+
 </script>
+
 
 
 
@@ -299,27 +286,27 @@ export default {
      margin: 90px 30px 20px 30px;     
 }
 
-.testimonial_cont p {
-color: #fff;
-padding-left:50px;
-font-size: 19px;
-line-height: 30px;
-font-weight: 400;
+// .testimonial_cont p {
+// color: #fff;
+// padding-left:50px;
+// font-size: 19px;
+// line-height: 30px;
+// font-weight: 400;
 
-}
-#testimonial_slider .carousel-indicators {
-     bottom: -50px;
-}
+// }
+// #testimonial_slider .carousel-indicators {
+//      bottom: -50px;
+// }
 
-#testimonial_slider .carousel-indicators li {
-     width: 25px;
-height: 25px;
-background-color: #052501;
-border-radius: 50px;
-}
-#testimonial_slider .carousel-indicators li.active {
-     background-color: #4bc714;
-}
+// #testimonial_slider .carousel-indicators li {
+//      width: 25px;
+// height: 25px;
+// background-color: #052501;
+// border-radius: 50px;
+// }
+// #testimonial_slider .carousel-indicators li.active {
+//      background-color: #4bc714;
+// }
 .form-inline{display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap;-ms-flex-align:center;align-items:center}.form-inline .form-check{width:100%}@media (min-width:576px){.form-inline label{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;margin-bottom:0}.form-inline .form-group{display:-ms-flexbox;display:flex;-ms-flex:0 0 auto;flex:0 0 auto;-ms-flex-flow:row wrap;flex-flow:row wrap;-ms-flex-align:center;align-items:center;margin-bottom:0}.form-inline .form-control{display:inline-block;width:auto;vertical-align:middle}
 .form-inline .form-control-plaintext{display:inline-block}.form-inline .custom-select,.form-inline .input-group{width:auto}.form-inline .form-check{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:auto;padding-left:0}.form-inline .form-check-input{position:relative;margin-top:0;margin-right:.25rem;margin-left:0}.form-inline .custom-control{-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}.form-inline .custom-control-label{margin-bottom:0}}
 
