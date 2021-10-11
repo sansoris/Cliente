@@ -3,8 +3,7 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import "semantic-ui-css/semantic.min.css";
-import "/css/bootstrap.min.css";
-import "/js/bootstrap.bundle.min.js";
+
 
 // VueElement.use(bootstrapVue)
 

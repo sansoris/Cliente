@@ -11,7 +11,7 @@
 
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/img/1.png" class="d-block w-100" alt="Banner 1">
+                <img src="../assets/img/1.png" class="d-block w-100" alt="Banner 1">
                 <div class="carousel-caption d-none d-md-block">
                 <h1>Se lo Recomiendo</h1> 
                 <p>Ofrece la solución que su hogar necesita</p>
@@ -19,14 +19,14 @@
             </div>
 
             <div class="carousel-item">
-                <img src="/img/2.png" class="d-block w-100" alt="Banner 2">
+                <img src="../assets/img/2.png" class="d-block w-100" alt="Banner 2">
                 <div class="carousel-caption d-none d-md-block">
                 <p><a class="btn btn-lg btn-primary" href="#">Abrir</a></p>
                 </div>
             </div>
 
             <div class="carousel-item">
-                <img src="/img/3.png" class="d-block w-100" alt="Banner 3">
+                <img src="../assets/img/3.png" class="d-block w-100" alt="Banner 3">
             </div>
             </div>
 
@@ -115,7 +115,7 @@
 
 <script>
 
-import Basiclayouts from '@/layouts/Basiclayouts';
+import Basiclayouts from '../layouts/Basiclayouts';
 import Login from './Login.vue'
 
 export default {

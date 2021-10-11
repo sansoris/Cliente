@@ -21,7 +21,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between" style ="background-color: #FFA07A;">
     <a class="navbar-brand" href="#"> </a>
-     <img src="assets/Logo corporativo.png " width="90" height="100" alt="">
+     <img src="../assets/img/Logo corporativo.png" width="90" height="100" alt="">
     <button class="navbar-toggler" style ="background-color: #FFA07A;" type="button" data-toggle="collapse" 
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
             aria-expanded="false" aria-label="Toggle navigation">

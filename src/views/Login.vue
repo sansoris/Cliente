@@ -9,7 +9,7 @@
           type="text" 
           placeholder="Nombre de usuario" 
           v-model="formData.identifier"
-          :class="{error:formError.identifier} "
+          :class="{ error:formError.identifier } "
           />
         </div>
         <div class="field">
@@ -40,7 +40,7 @@ import { useRoute } from 'vue-router';
 import * as Yup from 'yup';
 import Basiclayouts from '@/layouts/Basiclayouts.vue';
 import { loginApi } from '@/api/user';
-import {setTokenApi, getTokenApi} from '@/api/token';
+import { setTokenApi, getTokenApi } from '@/api/token';
 
 export default {
   name: 'Login',

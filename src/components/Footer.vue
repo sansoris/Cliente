@@ -17,10 +17,10 @@
     <div class="social-media">
         <h2 class="seccion-pie">Se Lo Recomiendo © 2021</h2>
         <ul class="social">
-            <li><a href="https://www.facebook.com/" target="blank"><img src="/img/facebook.png" width="40" height="40" alt="Facebook"></a></li>
-            <li><a href="https://www.twitter.com/" target="blank"><img src="/img/twitter.png" width="40" height="40" alt="Twitter"></a></li>
-            <li><a href="https://www.instagram.com/" target="blank"><img src="/img/instagram.png" width="40" height="40" alt="Instagram"></a></li>
-            <li><a href="https://www.linkedin.com/" target="blank"><img src="/img/linkedin.png" width="40" height="40" alt="Linkedin"></a></li>
+            <li><a href="https://www.facebook.com/" target="blank"><img src="../assets/img/facebook.png" width="40" height="40" alt="Facebook"></a></li>
+            <li><a href="https://www.twitter.com/" target="blank"><img src="../assets/img/twitter.png" width="40" height="40" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/" target="blank"><img src="../assets/img//instagram.png" width="40" height="40" alt="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/" target="blank"><img src="../assets/img//linkedin.png" width="40" height="40" alt="Linkedin"></a></li>
         </ul>
     </div>
 <!-- Footer ending -->

@@ -22,12 +22,12 @@
                             <input class="Vegetable_fom" placeholder="Vegetable" type="text" name=" Vegetable">
                             <button class="Search_btn">Search</button>
                         </form> -->
-                        <a href="/src/views/Contactenos.vue">Contáctenos</a> <a href="/src/views/Vinculate.vue">Recomendar </a>
+                        <a href="./Contactenos.vue">Contáctenos</a> <a href="./Vinculate.vue">Recomendar </a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div class="images_box">
-                        <figure><img src="img/quienes01.jpg"></figure>
+                        <figure><img src="../assets/img/quienes01.jpg"></figure>
                         </div>
                     </div>
                     </div>
@@ -49,13 +49,13 @@
                     <input class="Vegetable_fom" placeholder="Vegetable" type="text" name=" Vegetable">
                     <button class="Search_btn">Search</button>
                 </form> -->
-                        <a href="/src/views/Contactenos.vue">Contáctenos</a> <a href="/src/views/Vinculate.vue">Recomendar </a>
+                        <a href="./Contactenos.vue">Contáctenos</a> <a href="./Vinculate.vue">Recomendar </a>
                 </div>
                     </div>
 
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div class="images_box">
-                        <figure><img src="/img/Plomero01.jpg"></figure>
+                        <figure><img src="../assets/img/Plomero01.jpg"></figure>
                         </div>
                     </div>
                     </div>
@@ -84,12 +84,12 @@
                     <input class="Vegetable_fom" placeholder="Vegetable" type="text" name=" Vegetable">
                     <button class="Search_btn">Search</button>
                 </form> -->
-                        <a href="/src/views/Contactenos.vue">Contáctenos</a> <a href="/src/views/Vinculate.vue">Recomendar </a>
+                        <a href="./Contactenos.vue">Contáctenos</a> <a href="./Vinculate.vue">Recomendar </a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div class="images_box">
-                        <figure><img src="/img/Electrico01.jpg"></figure>
+                        <figure><img src="../assets/img/Electrico01.jpg"></figure>
                         </div>
                     </div>
                     </div>
@@ -114,7 +114,7 @@
 
 <script>
 
-import Basiclayouts from '@/layouts/Basiclayouts.vue';
+import Basiclayouts from '../layouts/Basiclayouts.vue';
 // import Home from './Home.vue'
 import Vinculate from './Vinculate.vue'
 import Contactenos from './Contactenos.vue'

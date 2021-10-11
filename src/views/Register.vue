@@ -3,40 +3,40 @@
 
   <div class = "register">
     <h2>Registro de usuario </h2>
-    <form class = "ui form" @submit.prevent = "register">
-      <div class = "field">
+    <form class=" ui form" @submit.prevent = "register">
+      <div class=" field ">
         <input 
-        type = "text" 
-        placeholder = "Nombre de usuario" 
-        v-model= "formData.username"
-        :class = "{error: formError.username}"
+        type= "text" 
+        placeholder= "Nombre de usuario" 
+        v-model="formData.username"
+        :class ="{ error: formError.username }"
         />
       </div>
       <div class = "field">
       <input 
-        type = "text"
-        placeholder = "Correo electrónico" 
-        v-model= "formData.email"
-        :class = "{error: formError.email}"
+        type=" text"
+        placeholder=" Correo electrónico" 
+        v-model="formData.email "
+        :class=" { error: formError.email }"
         />
       </div>
       <div class = "field">
       <input 
-        type = "password" 
-        placeholder = "Contraseña" 
-        v-model= "formData.password"
-        :class = "{error: formError.password}"
+        type= "password" 
+        placeholder= "Contraseña" 
+        v-model="formData.password"
+        :class=" { error: formError.password }"
 
         />
       </div>
 
         <button type = "submit" 
-        class = "ui button fluid primary"
-        :class= "{loading }" >
+        class=" ui button fluid primary"
+        :class=" { loading }" >
         Crear usuario 
         </button>
     </form>
-    <router-link to = "@/login">
+    <router-link to = "./Login">
     Iniciar sesión
     </router-link>
   </div>
@@ -47,9 +47,9 @@
 import { ref, onMounted } from 'vue';
 import {useRoute} from 'vue-router';
 import * as Yup from 'yup';
-import Basiclayouts from '@/layouts/Basiclayouts.vue';
-import { registerApi } from '@/api/user';
-import { getTokenApi } from '@/api/token';
+import Basiclayouts from '../layouts/Basiclayouts.vue';
+import { registerApi } from '../api/user';
+import { getTokenApi } from '../api/token';
 
 export default {
 name: 'Register',
