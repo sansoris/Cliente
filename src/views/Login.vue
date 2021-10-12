@@ -1,83 +1,82 @@
 <template>
   <Basiclayouts>
     <!-- <h1>Estamos en Login</h1> -->
-    <div class = "login">
-      <h2> Iniciar sesión </h2> 
+    <div class="login">
+      <h2>Iniciar sesión</h2>
       <form class="ui form" @submit.prevent="login">
-        <div class ="field">
-          <input 
-          type="text" 
-          placeholder="Nombre de usuario" 
-          v-model="formData.identifier"
-          :class="{ error:formError.identifier } "
+        <div class="field">
+          <input
+            type="text"
+            placeholder="Nombre de usuario"
+            v-model="formData.identifier"
+            :class="{ error: formError.identifier }"
           />
         </div>
         <div class="field">
-          <input 
-          type="password" 
-          placeholder=" Contraseña"
-          v-model ="formData.username"
-          :class ="{ error:formError.password } "
+          <input
+            type="password"
+            placeholder=" Contraseña"
+            v-model="formData.username"
+            :class="{ error: formError.password }"
           />
         </div>
-        <button 
-        type = "submit" 
-        class= "ui button fluid primary" 
-        :class ="{ loading }">
+        <button
+          type="submit"
+          class="ui button fluid primary"
+          style="background-color: #8b0000"
+          :class="{ loading }"
+        >
           Entrar
         </button>
       </form>
-      <router-link to= "/register">
-      Crear una cuenta
+      <router-link to="/register">
+        Crear una cuenta
       </router-link>
     </div>
   </Basiclayouts>
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
-import { useRoute } from 'vue-router';
-import * as Yup from 'yup';
-import Basiclayouts from '@/layouts/Basiclayouts.vue';
-import { loginApi } from '@/api/user';
-import { setTokenApi, getTokenApi } from '@/api/token';
+import { ref, onMounted } from "vue";
+import { useRoute } from "vue-router";
+import * as Yup from "yup";
+import Basiclayouts from "@/layouts/Basiclayouts.vue";
+import { loginApi } from "@/api/user";
+import { setTokenApi, getTokenApi } from "@/api/token";
 
 export default {
-  name: 'Login',
-  components:{
+  name: "Login",
+  components: {
     Basiclayouts,
   },
 
-  setup(){
-  let formData = ref({});
-  let formError = ref({});
-  let loading = ref(false);
-  const router = useRoute();
-  const token = getTokenApi(); 
+  setup() {
+    let formData = ref({});
+    let formError = ref({});
+    let loading = ref(false);
+    const router = useRoute();
+    const token = getTokenApi();
 
-  onMounted(()  =>  {
-    if (token) return router.push('/');
-  });
+    onMounted(() => {
+      if (token) return router.push("/");
+    });
 
+    const schemaForm = Yup.object().shape({
+      identifier: Yup.string().required(true),
+      password: Yup.string().required(true),
+    });
 
-  const schemaForm = Yup.object().shape({
-  identifier: Yup.string().required(true),
-  password: Yup.string().required(true),
-  });
+    const login = async () => {
+      formError.value = {};
 
-  const login = async ()  => {
-    formError.value = {};
+      try {
+        await schemaForm.validate(formData.value, { abortEarly: false });
 
-  try {
-    await schemaForm.validate(formData.value,
-    { abortEarly: false });
- 
-
-    try {
-      const response = await loginApi(formData,value);
-      if (!response?.jwt) throw 'El usuario o contraseña no son validos'
-      setTokenApi(reponse.jwt);
-          router.push('/');
+        try {
+          const response = await loginApi(formData, value);
+          if (!response?.jwt) throw "El usuario o contraseña no son validos";
+          setTokenApi(reponse.jwt);
+          router.push("/");
         } catch (error) {
           console.log(error);
         }

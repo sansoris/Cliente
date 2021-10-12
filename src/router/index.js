@@ -49,7 +49,7 @@ const routes = [
     // component: () => import('../views/Calificar.vue'),
   },
     {
-    path: 'quienes',
+    path: '/quienes',
     name: 'Quienes',
     component: Quienes
     // component: () => import('../views/Quienes.vue'),
@@ -65,12 +65,6 @@ const routes = [
     name: 'Terminos',
     component: Terminos
     // component: () => import('../views/Terminos.vue'),
-  },
-  {
-    path: '/condicionesUso',
-    name: 'CondicionesUso',
-    component: CondicionesUso
-    // component: () => import('../views/CondicionesUso.pdf'),
   }
 
 
