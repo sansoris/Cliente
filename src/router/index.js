@@ -1,7 +1,8 @@
-// import { createRouter, createWebHashHistory } from "vue-router";
+// import { createRouter, createWebHashHistory } from 'vue-router';
 
-import { createRouter, createWebHistory } from "vue-router";
-import Home from '../views/Home.vue'
+import { createRouter, createWebHistory } from 'vue-router'
+
+import Home from  '../views/Home.vue'    
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Vinculate from '../views/Vinculate.vue'
@@ -10,13 +11,17 @@ import Calificar from '../views/Calificar.vue'
 import Quienes from '../views/Quienes.vue'
 import Contactenos from '../views/Contactenos.vue'
 import Terminos from '../views/Terminos.vue'
+import Lista from '../views/Lista.vue'
+import Dashboard from '../views/Dashboard.vue'
+import Recomendados from '../views/Recomendados.vue'
+import Comentarios from '../views/Comentarios.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
-      // component: () => import('../views/Home.vue'),
+    // component: () => import('../views/Home.vue'),
   },
   {
     path: '/login',
@@ -36,25 +41,25 @@ const routes = [
     component: Vinculate
     // component: () => import('../views/Vinculate.vue'),
   },
-   {
+  {
     path: '/servicios',
     name: 'Servicios',
     component: Servicios
     // component: () => import('../views/Servicios.vue'),
   },
-   {
+  {
     path: '/calificar',
     name: 'Calificar',
     component: Calificar
     // component: () => import('../views/Calificar.vue'),
   },
-    {
+  {
     path: '/quienes',
     name: 'Quienes',
     component: Quienes
     // component: () => import('../views/Quienes.vue'),
-    },
-    {
+  },
+  {
     path: '/contactenos',
     name: 'Contactenos',
     component: Contactenos
@@ -65,10 +70,34 @@ const routes = [
     name: 'Terminos',
     component: Terminos
     // component: () => import('../views/Terminos.vue'),
+  },
+  {
+    path: '/lista',
+    name: 'Lista',
+    component: Lista
+    // component: () => import('../views/List.vue'),
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard
+    // component: () => import('../views/List.vue'),
+  },
+   {
+    path: '/recomendados',
+    name: 'Recomendados',
+    component: Recomendados
+    // component: () => import('../views/Recomendados.vue'),
+  },
+   ,
+   {
+    path: '/comentarios',
+    name: 'Comentarios',
+    component: Comentarios
+    // component: () => import('../views/Comentarios.vue'),
   }
 
-
-]
+ ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
@@ -77,7 +106,7 @@ const router = createRouter({
 
 // const router = createRouter({
 //   history: createWebHashHistory(),
-//   linkActiveClass: "active",
+//   linkActiveClass: 'active',
 //   routes,
 // });
 

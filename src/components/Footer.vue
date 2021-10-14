@@ -26,6 +26,7 @@
   />
 
   <!-- Footer beging -->
+
   <div class="social-media">
     <h4 class="seccion-pie">Se Lo Recomiendo © 2021</h4>
     <ul class="social">
@@ -78,7 +79,7 @@
   background-color: #ffa07a;
   padding-top: 1%;
   /* opacity: 60%; */
-  height: 60px;
+  height: 55px;
   display: flex;
   color: #8b0000;
   justify-content: center;

@@ -610,7 +610,36 @@ export default {
 .carousel-caption {
   position: inherit;
 }
+
+.my-auto {
+  margin-top: auto !important;
+}
+
+.carousel-caption {
+  position: inherit;
+}
 .carousel-indicators .active {
-  background-color: #b3bda9;
+  background-color: #1a1b19;
+}
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background: #ff8c00;
+}
+.padding_dd {
+  padding: 0px 50px;
+}
+.carousel-control-next {
+  display: none;
+}
+.carousel-control-prev {
+  display: none;
+}
+/** about section **/
+.about {
+  background-color: #fff;
+  box-shadow: #ddd 0px 0px 13px 5px;
+  margin: 90px 30px 20px 30px;
 }
 </style>

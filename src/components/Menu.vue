@@ -71,10 +71,8 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <router-link class="nav-link" to="/">
-                <FONT COLOR="black"
-                  >Inicio <span class="sr-only">(Actual)</span></FONT
-                ></router-link
-              >
+                <FONT COLOR="black">Inicio <span class="sr-only"></span></FONT
+              ></router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" to="/quienes">
@@ -131,30 +129,23 @@
 </template>
 
 <script>
-import { ref, onMounted } from "vue";
-import { getTokenApi, deleteTokenApi } from "@/api/token";
-import { getCategoriesApi } from "@/api/category";
+// import { ref, onMounted } from "vue";
+import { getTokenApi, deleteTokenApi } from "../api/token";
 
 export default {
   name: "Menu",
 
   setup() {
-    let categories = ref(null);
-    onMounted(async () => {
-      const response = await getCategoriesApi();
-      categories.value = response;
-    });
-
     const token = getTokenApi();
 
     const logout = () => {
       deleteTokenApi();
       location.replace("/");
     };
+
     return {
       token,
       logout,
-      categories,
     };
   },
 };

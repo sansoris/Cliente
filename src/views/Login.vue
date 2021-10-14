@@ -15,7 +15,7 @@
         <div class="field">
           <input
             type="password"
-            placeholder=" Contraseña"
+            placeholder="Contraseña"
             v-model="formData.username"
             :class="{ error: formError.password }"
           />
@@ -23,26 +23,24 @@
         <button
           type="submit"
           class="ui button fluid primary"
-          style="background-color: #8b0000"
+          style="background-color: #8b0000 "
           :class="{ loading }"
         >
           Entrar
         </button>
+        <!-- <router-link to="/">Entrar</router-link> -->
       </form>
-      <router-link to="/register">
-        Crear una cuenta
-      </router-link>
     </div>
   </Basiclayouts>
 </template>
 
 <script>
 import { ref, onMounted } from "vue";
-import { useRoute } from "vue-router";
+import { useRouter } from "vue-router";
 import * as Yup from "yup";
-import Basiclayouts from "@/layouts/Basiclayouts.vue";
-import { loginApi } from "@/api/user";
-import { setTokenApi, getTokenApi } from "@/api/token";
+import Basiclayouts from "../layouts/Basiclayouts.vue";
+import { loginApi } from "../api/user.js";
+import { setTokenApi, getTokenApi } from "../api/token.js";
 
 export default {
   name: "Login",
@@ -54,7 +52,7 @@ export default {
     let formData = ref({});
     let formError = ref({});
     let loading = ref(false);
-    const router = useRoute();
+    const router = useRouter();
     const token = getTokenApi();
 
     onMounted(() => {
@@ -73,10 +71,10 @@ export default {
         await schemaForm.validate(formData.value, { abortEarly: false });
 
         try {
-          const response = await loginApi(formData, value);
+          const response = await loginApi(formData.value);
           if (!response?.jwt) throw "El usuario o contraseña no son validos";
           setTokenApi(reponse.jwt);
-          router.push("/");
+          router.push("/dashboard");
         } catch (error) {
           console.log(error);
         }
@@ -86,7 +84,6 @@ export default {
         });
       }
     };
-
     return {
       formData,
       formError,
@@ -106,11 +103,15 @@ export default {
   .ui.form {
     max-width: 300px !important;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 140px;
+
     input.error {
       border-color: #faa;
       background-color: #ffeded;
     }
+  }
+  button {
+    background-color: #8b0000;
   }
 }
 </style>

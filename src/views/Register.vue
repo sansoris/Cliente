@@ -2,8 +2,8 @@
   <Basiclayouts>
     <div class="register">
       <h2>Registro de usuario</h2>
-      <form class=" ui form" @submit.prevent="register">
-        <div class=" field ">
+      <form class="ui form" @submit.prevent="register">
+        <div class="field">
           <input
             type="text"
             placeholder="Nombre de usuario"
@@ -13,8 +13,8 @@
         </div>
         <div class="field">
           <input
-            type="text"
-            placeholder=" Correo electrónico"
+            type="email"
+            placeholder="Correo electronico"
             v-model="formData.email"
             :class="{ error: formError.email }"
           />
@@ -30,39 +30,39 @@
 
         <button
           type="submit"
-          class=" ui button fluid primary"
-          style="background-color: #8b0000"
+          class="ui button fluid primary"
+          style="background-color: #8b0000 "
           :class="{ loading }"
         >
           Crear usuario
         </button>
       </form>
-      <router-link to="/login">
+
+      <!-- <router-link to="/login">
         Iniciar sesión
-      </router-link>
+      </router-link> -->
     </div>
   </Basiclayouts>
 </template>
 
 <script>
 import { ref, onMounted } from "vue";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import * as Yup from "yup";
 import Basiclayouts from "../layouts/Basiclayouts.vue";
-import { registerApi } from "../api/user";
-import { getTokenApi } from "../api/token";
+import { registerApi } from "../api/user.js";
+import { getTokenApi } from "../api/token.js";
 
 export default {
   name: "Register",
   components: {
     Basiclayouts,
   },
-
   setup() {
     let formData = ref({});
     let formError = ref({});
     let loading = ref(false);
-    const router = useRoute();
+    const router = useRouter(false);
     const token = getTokenApi();
 
     onMounted(() => {
@@ -78,8 +78,6 @@ export default {
     });
 
     const register = async () => {
-      // console.log('registrando usuario');
-      // console.log (formData.value);
       formError.value = {};
       loading.value = true;
 
@@ -87,21 +85,11 @@ export default {
         await schemaForm.validate(formData.value, { abortEarly: false });
         try {
           const response = await registerApi(formData.value);
-          router.push("/login");
+          router.push("/dashboard");
         } catch (error) {
           console.log(error);
         }
       } catch (error) {
-        error.inner.forEach((err) => {
-          formError.value[err.path] = err.message;
-        });
-      }
-
-      try {
-        await schemaForm.validate(formData.value, { abortEarly: false });
-      } catch (error) {
-        // console.log('Error');
-        // console.log(error);
         error.inner.forEach((err) => {
           formError.value[err.path] = err.message;
         });
@@ -127,7 +115,7 @@ export default {
   .ui.form {
     max-width: 300px !important;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 140px;
 
     input.error {
       border-color: #faa;

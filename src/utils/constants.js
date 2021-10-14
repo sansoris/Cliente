@@ -1,4 +1,3 @@
-export const API_URL = "http://localhost:1337";
-
-export const TOKEN = "token";
-// export const CATEGORY = "categories";
+export const API_URL ="http://localhost:1337"
+export const TOKEN = "token"
+export const LISTA = "lista"
