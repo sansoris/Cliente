@@ -29,25 +29,25 @@
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
             <router-link class="nav-link text-white" to="/lista">
-              <svg class="bi me-2" width="16" height="16">
-                <use xlink:href="#home" />
-              </svg>
+              <!-- <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#bootstrap" />
+              </svg> -->
               Usuarios autorizados
             </router-link>
           </li>
           <li>
             <router-link class="nav-link text-white" to="/recomendados">
-              <svg class="bi me-2" width="16" height="16">
-                <use xlink:href="#table" />
-              </svg>
+              <!-- <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#bootstrap" />
+              </svg>  -->
               Recomendados autorizados
             </router-link>
           </li>
           <li>
             <router-link class="nav-link text-white" to="/comentarios">
-              <svg class="bi me-2" width="16" height="16">
-                <use xlink:href="#grid" />
-              </svg>
+              <!-- <svg class="bi me-2" width="16" height="16">
+                <use xlink:href="#bootstrap" />
+              </svg> -->
               Comentarios
             </router-link>
           </li>

@@ -90,7 +90,8 @@ const routes = [
     // component: () => import('../views/Recomendados.vue'),
   },
    ,
-   {
+  {
+    methods: 'POST',
     path: '/comentarios',
     name: 'Comentarios',
     component: Comentarios

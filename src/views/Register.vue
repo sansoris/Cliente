@@ -65,9 +65,9 @@ export default {
     const router = useRouter(false);
     const token = getTokenApi();
 
-    onMounted(() => {
-      if (token) router.push("/");
-    });
+    // onMounted(() => {
+    //   if (token) router.push("/");
+    // });
 
     const schemaForm = Yup.object().shape({
       username: Yup.string().required(true),

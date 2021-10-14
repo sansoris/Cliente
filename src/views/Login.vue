@@ -16,7 +16,7 @@
           <input
             type="password"
             placeholder="Contraseña"
-            v-model="formData.username"
+            v-model="formData.password"
             :class="{ error: formError.password }"
           />
         </div>
@@ -28,7 +28,9 @@
         >
           Entrar
         </button>
-        <!-- <router-link to="/">Entrar</router-link> -->
+        <!-- <router-link class="nav-link text-white" to="/dashboard"
+          >Entrar</router-link
+        > -->
       </form>
     </div>
   </Basiclayouts>
@@ -55,9 +57,9 @@ export default {
     const router = useRouter();
     const token = getTokenApi();
 
-    onMounted(() => {
-      if (token) return router.push("/");
-    });
+    // onMounted(() => {
+    //   if (token) return router.push("/");
+    // });
 
     const schemaForm = Yup.object().shape({
       identifier: Yup.string().required(true),
@@ -73,7 +75,7 @@ export default {
         try {
           const response = await loginApi(formData.value);
           if (!response?.jwt) throw "El usuario o contraseña no son validos";
-          setTokenApi(reponse.jwt);
+          setTokenApi(response.jwt);
           router.push("/dashboard");
         } catch (error) {
           console.log(error);
@@ -84,6 +86,7 @@ export default {
         });
       }
     };
+
     return {
       formData,
       formError,

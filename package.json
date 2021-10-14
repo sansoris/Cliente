@@ -13,6 +13,7 @@
     "bootstrap-icons-vue": "^0.7.0",
     "core-js": "^3.6.5",
     "cors": "^2.8.5",
+    "mdb-vue-ui-kit": "^1.4.0",
     "semantic-ui-css": "^2.4.1",
     "sweetalert2": "^11.1.7",
     "vue": "^3.0.0",
