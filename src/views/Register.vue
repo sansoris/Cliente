@@ -36,6 +36,14 @@
         >
           Crear usuario
         </button>
+        <router-link
+          type="button"
+          class="btn btn-primary"
+          to="/dashboard"
+          style="background-color: #ffa07a; border-color: #ffa07a"
+        >
+          Regresar
+        </router-link>
       </form>
 
       <!-- <router-link to="/login">

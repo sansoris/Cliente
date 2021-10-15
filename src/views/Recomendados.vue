@@ -4,6 +4,7 @@
       <table class="table table-striped">
         <thead>
           <tr>
+            <th>Id</th>
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Telefono</th>
