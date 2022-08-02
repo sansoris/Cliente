@@ -1,46 +1,40 @@
-<mxfile host="app.diagrams.net" modified="2022-08-02T00:37:07.500Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="P0VfWCqf6yd-ZLzSrepN" version="15.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-02T00:44:43.657Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="u2Xb1pPRXVSgq8RX-cjQ" version="15.2.5" type="github">
   <diagram id="G0kcrmgzO1Yep1q2-as3" name="Page-1">
-    <mxGraphModel dx="1260" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1800" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="momm29Z3CLmcByE1CaIG-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-1" target="momm29Z3CLmcByE1CaIG-2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="momm29Z3CLmcByE1CaIG-1" value="R2D2" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="90" y="60" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="momm29Z3CLmcByE1CaIG-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-2" target="momm29Z3CLmcByE1CaIG-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="momm29Z3CLmcByE1CaIG-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-2" target="momm29Z3CLmcByE1CaIG-6">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="momm29Z3CLmcByE1CaIG-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="360" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="momm29Z3CLmcByE1CaIG-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-2" target="momm29Z3CLmcByE1CaIG-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="momm29Z3CLmcByE1CaIG-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-2" target="momm29Z3CLmcByE1CaIG-11">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="280" y="180" />
-              <mxPoint x="520" y="180" />
-            </Array>
+            <mxPoint x="490" y="480" as="targetPoint" />
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="momm29Z3CLmcByE1CaIG-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-2" target="momm29Z3CLmcByE1CaIG-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="momm29Z3CLmcByE1CaIG-2" value="SUCURSALES&lt;br&gt;Barrios&lt;br&gt;Servicios" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="230" y="50" width="100" height="100" as="geometry" />
+          <mxGeometry x="240" y="310" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="momm29Z3CLmcByE1CaIG-4" value="COSTOS&lt;br&gt;Transporte&lt;br&gt;Mantenimiento&lt;br&gt;Personal&lt;br&gt;Local&lt;br&gt;SerPublicos" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="410" y="50" width="100" height="100" as="geometry" />
+          <mxGeometry x="240" y="140" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="momm29Z3CLmcByE1CaIG-6" value="EQUIPOS&lt;br&gt;Marca&lt;br&gt;Capacidad&lt;br&gt;Fecha Compra&lt;br&gt;Fecha Mantenimiento&lt;br&gt;Fecha Servicio" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="120" y="210" width="130" height="130" as="geometry" />
+          <mxGeometry x="30" y="300" width="130" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="momm29Z3CLmcByE1CaIG-9" value="CLIENTES&lt;br&gt;Tipo Servicio&lt;br&gt;Duración servicio&lt;br&gt;Pago servicio" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="300" y="210" width="100" height="100" as="geometry" />
+        <mxCell id="momm29Z3CLmcByE1CaIG-9" value="CLIENTES&lt;br&gt;Tipo Servicio&lt;br&gt;Duración servicio&lt;br&gt;Pago servicio&lt;br&gt;Nombre&lt;br&gt;Barrio&lt;br&gt;Edad&lt;br&gt;Contacto" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="210" y="470" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="momm29Z3CLmcByE1CaIG-11" value="SERVICIO&lt;br&gt;Hora Solicitud&lt;br&gt;Hora atención&lt;br&gt;Hora Devolución&lt;br&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="460" y="210" width="100" height="100" as="geometry" />
+          <mxGeometry x="420" y="310" width="100" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
