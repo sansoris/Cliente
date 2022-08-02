@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-02T00:49:04.205Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="GpI_aq6EMpoA24HvioWT" version="15.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-02T00:53:14.948Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="MZiPgq9rXDOoEE3DPg5S" version="15.2.5" type="github">
   <diagram id="G0kcrmgzO1Yep1q2-as3" name="Page-1">
-    <mxGraphModel dx="713" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="416" dy="453" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -12,14 +12,33 @@
         <mxCell id="momm29Z3CLmcByE1CaIG-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-2" target="momm29Z3CLmcByE1CaIG-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="momm29Z3CLmcByE1CaIG-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-2" target="momm29Z3CLmcByE1CaIG-11">
+        <mxCell id="momm29Z3CLmcByE1CaIG-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-2" target="momm29Z3CLmcByE1CaIG-11">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="490" y="480" as="targetPoint" />
-            <Array as="points" />
+            <Array as="points">
+              <mxPoint x="390" y="360" />
+              <mxPoint x="390" y="250" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="momm29Z3CLmcByE1CaIG-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-2" target="momm29Z3CLmcByE1CaIG-4">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="momm29Z3CLmcByE1CaIG-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-2" target="momm29Z3CLmcByE1CaIG-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="360" />
+              <mxPoint x="390" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="momm29Z3CLmcByE1CaIG-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="momm29Z3CLmcByE1CaIG-2" target="momm29Z3CLmcByE1CaIG-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="360" />
+              <mxPoint x="390" y="430" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="momm29Z3CLmcByE1CaIG-2" value="SUCURSALES&lt;br&gt;Barrios&lt;br&gt;Servicios" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="240" y="310" width="100" height="100" as="geometry" />
@@ -34,7 +53,13 @@
           <mxGeometry x="210" y="470" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="momm29Z3CLmcByE1CaIG-11" value="SERVICIO&lt;br&gt;Fecha Hora&amp;nbsp; Solicitud&lt;br&gt;Fecha Hora atención&lt;br&gt;Fecha Hora Devolución" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="420" y="290" width="140" height="140" as="geometry" />
+          <mxGeometry x="430" y="180" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="momm29Z3CLmcByE1CaIG-20" value="FECHA&lt;br&gt;Mes&lt;br&gt;Trimestre&lt;br&gt;Semestre&lt;br&gt;Año" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="450" y="380" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="momm29Z3CLmcByE1CaIG-22" value="HORA&lt;br&gt;Hora&lt;br&gt;Minutos&lt;br&gt;Segundo" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="450" y="510" width="100" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
